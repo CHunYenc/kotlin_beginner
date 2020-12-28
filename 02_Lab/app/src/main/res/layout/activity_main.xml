@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="請輸入玩家姓名"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@id/textName"
+        app:layout_constraintLeft_toLeftOf="@id/textName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="請輸入姓名開始遊戲"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+
+    <RadioGroup
+        android:id="@+id/btn_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toBottomOf="@id/textName">
+
+        <RadioButton
+            android:id="@+id/btnScissor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/app_scissor"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/btnStone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/app_stone"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/btnPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/app_paper"></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnMora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/btnMora"
+        app:layout_constraintLeft_toLeftOf="@id/btn_group"
+        app:layout_constraintLeft_toRightOf="@id/btn_group"
+        app:layout_constraintTop_toBottomOf="@id/btn_group" />
+
+    <TextView
+        android:id="@+id/rcName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/rcNametext"
+        app:layout_constraintLeft_toLeftOf="@id/btnMora"
+        app:layout_constraintTop_toBottomOf="@id/btnMora"></TextView>
+
+    <TextView
+        android:id="@+id/rcWinName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/rcWinText"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toRightOf="@id/rcName"
+        app:layout_constraintTop_toBottomOf="@id/btnMora"></TextView>
+
+    <TextView
+        android:id="@+id/rcMeInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/rcMeText"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toRightOf="@id/rcWinName"
+        app:layout_constraintTop_toBottomOf="@id/btnMora"></TextView>
+
+    <TextView
+        android:id="@+id/rcComInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/rcComputerText"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toRightOf="@id/rcMeInput"
+        app:layout_constraintTop_toBottomOf="@id/btnMora"></TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

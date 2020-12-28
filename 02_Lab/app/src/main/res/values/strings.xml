@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">02_Lab</string>
+    <string name="app_scissor">剪刀</string>
+    <string name="app_stone">石頭</string>
+    <string name="app_paper">布</string>
+    <string name="rcNametext">姓名</string>
+    <string name="btnMora">猜拳</string>
+    <string name="rcWinText">勝利者</string>
+    <string name="rcMeText">我方出拳</string>
+    <string name="rcComputerText">電腦出拳</string>
+    <!--    <string name="app_name">02_Lab</string>-->
+    <!--    <string name="app_name">02_Lab</string>-->
+    <!--    <string name="app_name">02_Lab</string>-->
+    <!--    <string name="app_name">02_Lab</string>-->
+</resources>
