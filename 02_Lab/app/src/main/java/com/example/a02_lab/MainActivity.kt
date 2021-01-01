@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
+import androidx.appcompat.app.AppCompatDelegate
 import org.w3c.dom.Text
 import kotlin.math.log
 
@@ -13,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         setContentView(R.layout.activity_main)
 
         val inputName = findViewById<EditText>(R.id.inputName)
@@ -57,20 +59,20 @@ class MainActivity : AppCompatActivity() {
                 }
                 rcComputerName.text = "${rcComputerName.text}\n${outputC}"
 //                TODO 判斷誰輸誰贏
-                when{
+                when {
                     btnScossor.isChecked && computer == 2 ||
                             btnStone.isChecked && computer == 0 ||
-                            btnPaper.isChecked && computer == 1 ->{
+                            btnPaper.isChecked && computer == 1 -> {
                         rcWinName.text = "${rcWinName.text}\n玩家獲勝"
                         showName.text = "恭喜你，勝利了！"
                     }
                     btnScossor.isChecked && computer == 1 ||
                             btnStone.isChecked && computer == 2 ||
-                            btnPaper.isChecked && computer == 0 ->{
+                            btnPaper.isChecked && computer == 0 -> {
                         rcWinName.text = "${rcWinName.text}\n電腦獲勝"
                         showName.text = "很可惜，失敗了！"
                     }
-                    else ->{
+                    else -> {
                         rcWinName.text = "${rcWinName.text}\n平手"
                         showName.text = "和局，再一次。"
                     }
