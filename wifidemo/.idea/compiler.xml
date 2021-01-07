@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="4096" />
+    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Xms1024m  -Xmx4096m # &lt;------ increase this to most of your RAM  -XX:MaxPermSize=1024m  -XX:ReservedCodeCacheSize=440m  -XX:+UseCompressedOops  -XX:-HeapDumpOnOutOfMemoryError  -Dfile.encoding=UTF-8" />
+    <bytecodeTargetLevel target="1.8" />
+  </component>
+</project>
